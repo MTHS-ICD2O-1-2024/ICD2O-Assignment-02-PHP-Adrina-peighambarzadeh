@@ -30,18 +30,6 @@
       <div class="right-image">
         <img src="./images/right-triangle.png" alt="right triangle image" width="250" />
       </div>
-
-      <div class="page-content-php">
-        <form method="post">
-          <label for="a">Side A (cm):</label>
-          <input type="number" id="a" name="a" step="0.01" required>
-          <br>
-          <label for="b">Side B (cm):</label>
-          <input type="number" id="b" name="b" step="0.01" required>
-          <br><br>
-          <input type="submit" value="Calculate">
-        </form>
-
         <div id="user-info">
           <div id="user-info">
             <?php
