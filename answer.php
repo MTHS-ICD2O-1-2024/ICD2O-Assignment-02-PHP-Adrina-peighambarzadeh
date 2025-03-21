@@ -28,7 +28,7 @@
 
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/triangle.png" alt="Right Triangle" width="500" />
+        <img src="./images/right-triangle.png" alt="right triangle image" width="250" />
       </div>
 
       <div class="page-content-php">

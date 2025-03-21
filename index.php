@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/Screenshot 2025-03-19 13.27.00.png (1).jpg" alt="laptop image" width="250" />
+        <img src="./images/right-triangle.png" alt="right triangle image" width="250" />
       </div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
