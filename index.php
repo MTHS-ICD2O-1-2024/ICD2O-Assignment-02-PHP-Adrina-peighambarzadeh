@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of the right triangle, in PHP" />
+  <meta name="description" content="perimiter of the right triangle, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Adrina. peighambarzadeh" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,14 +33,14 @@
         <form action="answer.php" method="GET">
           <p>a Leg</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="a">
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="a-leg">
             <label class="mdl-textfield__label" for="a-leg">Put your answer here ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
           <p>b Leg</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="b">
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="b-leg">
             <label class="mdl-textfield__label" for="b-leg">Put your answer here ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>

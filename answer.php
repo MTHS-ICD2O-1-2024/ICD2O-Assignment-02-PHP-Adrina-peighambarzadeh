@@ -43,26 +43,30 @@
         </form>
 
         <div id="user-info">
-          <?php
-          if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Get input values and convert them to float
-            $a = isset($_POST["a"]) ? floatval($_POST["a"]) : 0;
-            $b = isset($_POST["b"]) ? floatval($_POST["b"]) : 0;
+          <div id="user-info">
+            <?php
+            // Input
+            $aLegOfRightTriangle = $_GET["a-leg"];
+            $bLegOfRightTriangle = $_GET["b-leg"];
 
-            // Process: Calculate the hypotenuse and perimeter
-            $c = sqrt($a * $a + $b * $b);
-            $perimeterOfTriangle = $a + $b + $c;
+            // Calculate the hypotenuse (c-leg) using the Pythagorean theorem
+            $cLegOfRightTriangle = sqrt($aLegOfRightTriangle * $aLegOfRightTriangle + $bLegOfRightTriangle * $bLegOfRightTriangle);
 
-            // Output result
-            echo "<p>Your answer is: " . round($perimeterOfTriangle, 2) . " cm</p>";
-          }
-          ?>
+            // Calculate the perimeter of the right triangle
+            $perimeter = $aLegOfRightTriangle + $bLegOfRightTriangle + $cLegOfRightTriangle;
+
+            // Output
+            echo "If your triangle has the a = " . $aLegOfRightTriangle . " cm and b = " . $bLegOfRightTriangle . " cm:";
+            echo "<br />";
+            echo "<br />";
+            echo "The perimeter is " . $perimeter . " cm.";
+            ?>
+
+          </div>
         </div>
-      </div>
-
-      <div class="page-content-return">
-        <a href="./index.php">Return ...</a>
-      </div>
+        <div class="page-content-return">
+          <a href="./index.php">Return ...</a>
+        </div>
     </main>
   </div>
 </body>
